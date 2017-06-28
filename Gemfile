@@ -40,6 +40,8 @@ gem 'trailblazer-rails'
 gem 'devise'
 # for authorization
 gem 'pundit'
+gem 'rails_admin', '~> 1.2'
+gem 'rails_admin_pundit', :github => 'sudosu/rails_admin_pundit'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
