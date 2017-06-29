@@ -35,7 +35,9 @@ gem 'jbuilder', '~> 2.5'
 # use postgresql database
 gem 'pg'
 # for organizing code
-gem 'trailblazer-rails'
+gem 'trailblazer'
+gem 'trailblazer-rails' # if you are in rails.
+gem 'trailblazer-cells'
 # for authentication
 gem 'devise'
 # for authorization
