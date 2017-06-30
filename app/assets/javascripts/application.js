@@ -10,6 +10,18 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
-//= require turbolinks
-//= require_tree .
+// app/javascript/packs/application.js
+
+import Vue from 'vue'
+import App from '../components/app.vue'
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.appendChild(document.createElement('app'))
+const app = new Vue({
+    el: 'app',
+    template: '<App/>',
+    components: { App }
+})
+
+console.log(app)
+})

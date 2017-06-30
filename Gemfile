@@ -45,6 +45,8 @@ gem 'devise'
 gem 'pundit'
 gem 'rails_admin', '~> 1.2'
 gem 'rails_admin_pundit', :github => 'sudosu/rails_admin_pundit'
+# use JavaScript pre-processor
+gem 'webpacker'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -63,6 +65,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'binding_of_caller'
+  gem 'foreman', require: false
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
