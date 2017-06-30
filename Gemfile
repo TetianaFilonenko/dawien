@@ -38,7 +38,6 @@ gem 'pg'
 gem 'trailblazer'
 gem 'trailblazer-rails' # if you are in rails.
 gem 'trailblazer-cells'
-gem 'trailblazer-cells'
 gem 'cells-rails'
 # gem 'cells-hamlit'
 gem 'cells-erb'

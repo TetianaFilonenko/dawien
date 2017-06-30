@@ -3,9 +3,10 @@ default: &default
   encoding: unicode
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: dawien
-  password: 1
+  username: postgres
+  password:
   timeout: 5000
+  url: <%= ENV['DATABASE_URL'] %>
 
 development:
   <<: *default
