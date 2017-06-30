@@ -1,24 +1,5 @@
-# README
+[ ![Codeship Status for TetianaFilonenko/dawien](https://app.codeship.com/projects/d6105f60-3e27-0135-4608-62b0b76803e5/status?branch=master)](https://app.codeship.com/projects/229391)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+This is app for fun
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
