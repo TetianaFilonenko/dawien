@@ -51,6 +51,8 @@ GEM
     arel (8.0.0)
     bcrypt (3.1.11)
     bindex (0.5.0)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     builder (3.2.3)
     byebug (9.0.6)
     capybara (2.14.4)
@@ -65,6 +67,12 @@ GEM
       declarative-option (< 0.2.0)
       tilt (>= 1.4, < 3)
       uber (< 0.2.0)
+    cells-erb (0.1.0)
+      cells (~> 4.0)
+      erbse (>= 0.1.1)
+    cells-rails (0.0.8)
+      actionpack (>= 3.0)
+      cells (>= 4.1.6, < 5.0.0)
     childprocess (0.7.1)
       ffi (~> 1.0, >= 1.0.11)
     coffee-rails (4.2.2)
@@ -75,6 +83,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
+    debug_inspector (0.0.3)
     declarative (0.0.9)
     declarative-builder (0.1.0)
       declarative-option (< 0.2.0)
@@ -92,6 +101,8 @@ GEM
       declarative-option (< 0.2.0)
       representable (>= 2.4.0, <= 3.1.0)
       uber (< 0.2.0)
+    erbse (0.1.1)
+      temple
     erubi (1.6.1)
     execjs (2.7.0)
     ffi (1.9.18)
@@ -296,8 +307,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  binding_of_caller
   byebug
   capybara (~> 2.13)
+  cells-erb
+  cells-rails
   coffee-rails (~> 4.2)
   devise
   jbuilder (~> 2.5)

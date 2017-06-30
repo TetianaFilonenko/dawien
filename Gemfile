@@ -19,7 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-# Use CoffeeScript for .coffee assets and views
+# Use CoffeeScript for .coffee assets and view
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
@@ -38,6 +38,10 @@ gem 'pg'
 gem 'trailblazer'
 gem 'trailblazer-rails' # if you are in rails.
 gem 'trailblazer-cells'
+gem 'trailblazer-cells'
+gem 'cells-rails'
+# gem 'cells-hamlit'
+gem 'cells-erb'
 # for authentication
 gem 'devise'
 # for authorization
@@ -61,6 +65,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'binding_of_caller'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
