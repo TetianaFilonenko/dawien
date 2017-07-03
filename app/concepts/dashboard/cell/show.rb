@@ -1,7 +1,6 @@
 module Dashboard
   module Cell
-    class Show < Trailblazer::Cell
-      include ::Cell::Erb
+    class Show < Application::Cell::Default
     end
   end
 end

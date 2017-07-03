@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dawien</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_pack_tag 'application' %>
+</head>
+<body>
+<div id="application" v-cloak>
+  <div class="container">
+    <h1>{{ container }}</h1>
+    <%= yield %>
+  </div>
+  <aside>
+    <h1>{{ sidebar }}</h1>
+  </aside>
+</div>
+</body>
+</html>

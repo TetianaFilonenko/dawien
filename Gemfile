@@ -47,6 +47,7 @@ gem 'rails_admin', '~> 1.2'
 gem 'rails_admin_pundit', :github => 'sudosu/rails_admin_pundit'
 # use JavaScript pre-processor
 gem 'webpacker'
+gem 'vuejs-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

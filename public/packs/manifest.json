@@ -1,14 +1,4 @@
 {
-  "app.css": "/packs/app-417649e3a147f4be3212.css",
-  "app.css.map": "/packs/app-417649e3a147f4be3212.css.map",
-  "app.js": "/packs/app-5c0ca5099a8d1cd5527d.js",
-  "app.js.map": "/packs/app-5c0ca5099a8d1cd5527d.js.map",
-  "application.css": "/packs/application-417649e3a147f4be3212.css",
-  "application.css.map": "/packs/application-417649e3a147f4be3212.css.map",
-  "application.js": "/packs/application-4c67286f73d426f937ac.js",
-  "application.js.map": "/packs/application-4c67286f73d426f937ac.js.map",
-  "hello_vue.css": "/packs/hello_vue-417649e3a147f4be3212.css",
-  "hello_vue.css.map": "/packs/hello_vue-417649e3a147f4be3212.css.map",
-  "hello_vue.js": "/packs/hello_vue-b4b067ce1d610d072a63.js",
-  "hello_vue.js.map": "/packs/hello_vue-b4b067ce1d610d072a63.js.map"
+  "application.css": "http://0.0.0.0:8080/packs/application.css",
+  "application.js": "http://0.0.0.0:8080/packs/application.js"
 }
