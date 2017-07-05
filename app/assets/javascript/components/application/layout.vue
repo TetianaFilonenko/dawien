@@ -17,24 +17,29 @@
         <a class="header__nav-link">Profile</a>
       </nav>
       <div class="header__social-links">
-        <a class="header__social-link-item header__social-link-facebook"></a>
-        <a class="header__social-link-item header__social-link-google"></a>
-        <a class="header__social-link-item header__social-link-twitter"></a>
+        <a class="header__social-link-item header__social-link_facebook" href="https://www.facebook.com" target="_blank"></a>
+        <a class="header__social-link-item header__social-link_google" href="https://google.com" target="_blank"></a>
+        <a class="header__social-link-item header__social-link_twitter" href="https://twitter.com" target="_blank"></a>
       </div>
     </header>
     <dynamic-page></dynamic-page>
     <footer class="footer">
-      <ul class="footer-menu">
-        <li class="footer-menu__item">Point 1</li>
-        <li class="footer-menu__item">Point 1</li>
-        <li class="footer-menu__item">Point 1</li>
-      </ul>
-      <div class="footer-bottom-block">
-        <div class="footer-bottom-block__company-detail">Dawien </div>
-        <div class="footer-bottom-block__social-links">
-          <a class="footer-bottom-block__social-link-item footer-bottom-block__social-link-facebook"></a>
-          <a class="footer-bottom-block__social-link-item footer-bottom-block__social-link-google"></a>
-          <a class="footer-bottom-block__social-link-item footer-bottom-block__social-link-twitter"></a>
+      <div class="footer__contact-info">
+        <div class="footer__contact-info-item footer__contact-info-location">
+          <div class="footer__contact-info-icon footer__contact-info-location-icon"></div>
+          <div class="footer__contact-info-label footer__contact-info-phone-label">Khakov, Tsilinogradskaya 41</div>
+        </div>
+        <div class="footer__contact-info-item footer__contact-info-phone">
+          <div class="footer__contact-info-icon footer__contact-info-phone-icon"></div>
+          <div class="footer__contact-info-label footer__contact-info-phone-label">+380 066 612 38 19</div>
+        </div>
+      </div>
+      <div class="footer__bottom-block">
+        <div class="footer__company-detail"> Copyright &copy; 2017 | Dawien</div>
+        <div class="footer__social-links">
+          <a class="footer__social-link-item footer__social-link-item_facebook" href="https://www.facebook.com" target="_blank"></a>
+          <a class="footer__social-link-item footer__social-link-item_google" href="https://google.com" target="_blank"></a>
+          <a class="footer__social-link-item footer__social-link-item_twitter" href="https://twitter.com" target="_blank"></a>
         </div>
       </div>
     </footer>

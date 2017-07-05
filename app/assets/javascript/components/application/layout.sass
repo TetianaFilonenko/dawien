@@ -7,6 +7,13 @@
 @font-face
   font-family: "Hind"
   src: url(fonts/Hind-Regular.ttf) format("truetype")
+@font-face
+  font-family: "ArvoBold"
+  src: url(fonts/Arvo-Bold.ttf) format("truetype")
+@font-face
+  font-family: "OxygenBold"
+  src: url(fonts/Oxygen-Bold.ttf) format("truetype")
+
 html
   width: 100%
   height: 100%
@@ -50,11 +57,14 @@ body
   width: 50%
   flex: 2
   order: 2
+  display: flex
+  flex-wrap: wrap
 .header__social-links
   flex: 0.5
   order: 3
   display: flex
   width: 20%
+  flex-wrap: wrap
 .header__social-link-item
   background-image: url(images/social-network.png)
   width: 38px
@@ -63,11 +73,11 @@ body
   background-size: auto 50px
   background-repeat: no-repeat
   display: inline-flex
-.header__social-link-facebook
+.header__social-link_facebook
   background-position: -2px
-.header__social-link-google
+.header__social-link_google
   background-position: -104px
-.header__social-link-twitter
+.header__social-link_twitter
   background-position: -38px
 .header__nav-link
   color: #525152
@@ -79,5 +89,62 @@ body
   border-bottom: 1px solid #778
 .header__nav-link_current
   background-color: #f5f5f5
-
-
+.footer
+  width: 100%
+  margin: 0 auto 10px
+  padding: 20px 0 10px
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  background-color: #777777
+  flex-direction: column
+.footer__contact-info
+  display: flex
+  align-items: center
+  padding-bottom: 15px
+.footer__contact-info-item
+  flex: 1
+  display: flex
+  align-items: center
+.footer__contact-info-icon
+  width: 35px
+  height: 35px
+  background-position: 50% 50%
+  background-size: auto 35px
+  background-repeat: no-repeat
+.footer__contact-info-location-icon
+  background-image: url(images/location.png)
+.footer__contact-info-phone-icon
+  background-image: url(images/phone.png)
+.footer__contact-info-label
+  padding-left: 5px
+  font-size: 13px
+  font-family: OxygenBold, Times, serif
+  color: #1A1B1A
+.footer__bottom-block
+  display: flex
+  flex-direction: column
+  align-items: center
+.footer__company-detail
+  font-size: 15px
+  color: #1A1B1A
+  font-family: ArvoBold, Times, serif
+.footer__social-links
+  display: flex
+  align-items: center
+.footer__social-link-item
+  background-image: url(images/social-network-footer.png)
+  width: 50px
+  height: 50px
+  background-position: 50% 50%
+  background-size: auto 140px
+  background-repeat: no-repeat
+  display: inline-flex
+  margin: 5px
+.footer__social-link-item_facebook
+  background-position: 0px 3px
+.footer__social-link-item_google
+  background-position: -58px -105px
+  background-size: auto 160px
+.footer__social-link-item_twitter
+  background-position: -50px 3px

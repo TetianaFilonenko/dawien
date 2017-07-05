@@ -1,8 +1,13 @@
 {
-  "application.js": "http://0.0.0.0:8080/packs/application.js",
-  "t-shirt.png": "http://0.0.0.0:8080/packs/t-shirt.png",
-  "social-network.png": "http://0.0.0.0:8080/packs/social-network.png",
-  "Muli-SemiBold.ttf": "http://0.0.0.0:8080/packs/Muli-SemiBold.ttf",
   "Bellefair-Regular.ttf": "http://0.0.0.0:8080/packs/Bellefair-Regular.ttf",
-  "Hind-Regular.ttf": "http://0.0.0.0:8080/packs/Hind-Regular.ttf"
+  "Hind-Regular.ttf": "http://0.0.0.0:8080/packs/Hind-Regular.ttf",
+  "Muli-SemiBold.ttf": "http://0.0.0.0:8080/packs/Muli-SemiBold.ttf",
+  "application.js": "http://0.0.0.0:8080/packs/application.js",
+  "social-network.png": "http://0.0.0.0:8080/packs/social-network.png",
+  "t-shirt.png": "http://0.0.0.0:8080/packs/t-shirt.png",
+  "location.png": "http://0.0.0.0:8080/packs/location.png",
+  "phone.png": "http://0.0.0.0:8080/packs/phone.png",
+  "Arvo-Bold.ttf": "http://0.0.0.0:8080/packs/Arvo-Bold.ttf",
+  "Oxygen-Bold.ttf": "http://0.0.0.0:8080/packs/Oxygen-Bold.ttf",
+  "social-network-footer.png": "http://0.0.0.0:8080/packs/social-network-footer.png"
 }
