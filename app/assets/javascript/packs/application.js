@@ -8,21 +8,18 @@
 // layout file, like app/views/layouts/application.html.erb
 
 import Vue from 'vue/dist/vue.common'
-import App from '../components/app.vue'
+import Layout from '../components/application/layout.vue'
+import DynamicPage from '../components/dashboard/home_page.vue'
+
+Vue.component('dynamic-page', DynamicPage)
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('hi')
-  document.body.appendChild(document.createElement('app'))
+  // document.body.appendChild(document.createElement('app'))
   const app = new Vue({
-    el: 'app',
-    template: '<App/>',
-    components: { App }
+    el: '.general-layout',
+    template: '<layout/>',
+    components: {  Layout }
   })
-    new Vue({
-        el: '#application',
-        data: {
-            sidebar: 'I am sidebar!',
-            container: 'I am container!',
-        },
-    });
+
+    console.log(app)
 })

@@ -1,4 +1,8 @@
 {
-  "application.css": "http://0.0.0.0:8080/packs/application.css",
-  "application.js": "http://0.0.0.0:8080/packs/application.js"
+  "application.js": "http://0.0.0.0:8080/packs/application.js",
+  "t-shirt.png": "http://0.0.0.0:8080/packs/t-shirt.png",
+  "social-network.png": "http://0.0.0.0:8080/packs/social-network.png",
+  "Muli-SemiBold.ttf": "http://0.0.0.0:8080/packs/Muli-SemiBold.ttf",
+  "Bellefair-Regular.ttf": "http://0.0.0.0:8080/packs/Bellefair-Regular.ttf",
+  "Hind-Regular.ttf": "http://0.0.0.0:8080/packs/Hind-Regular.ttf"
 }
