@@ -5,4 +5,9 @@ WORKDIR /myapp
 ADD Gemfile /myapp/Gemfile
 ADD Gemfile.lock /myapp/Gemfile.lock
 RUN bundle install
+RUN rails webpacker:install
+RUN rails webpacker:install:vue
+RUN bundle config --delete bin
+RUN rails app:update:bin
 ADD . /myapp
+

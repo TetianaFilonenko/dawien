@@ -24,3 +24,5 @@
 /.idea/*/public/packs
 /node_modules
 /.idea
+/public/assets/*
+/public/packs/*
