@@ -10,6 +10,16 @@ module Dawien
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
+    if defined? Rack::Cors
+      Rails.configuration.middleware.insert_before 0, Rack::Cors do
+        allow do
+          origins %w[
+            https://dawien.herokuapp.com
+          ]
+          resource '/entries/*'
+        end
+      end
+    end
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
