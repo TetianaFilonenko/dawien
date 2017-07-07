@@ -19,9 +19,4 @@ document.addEventListener('DOMContentLoaded', () => {
     template: '<layout/>',
     components: {  Layout }
   })
-    new Vue({
-        el: '.dawien-slider',
-        components: {  Slider }
-    })
-    console.log(app)
 })
