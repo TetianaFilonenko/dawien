@@ -11,8 +11,9 @@
       </div>
       <div class="page-container">
         <div class="welcome-container">
-          <div  class="welcome-container__title">Welcome</div>
-          <div  class="welcome-container__page">ddddd</div>
+          <div class="welcome-container__title">Welcome</div>
+          <div class="welcome-container__page">
+          </div>
         </div>
         <div class="benefit-container"></div>
         <div class="statistic-container"></div>

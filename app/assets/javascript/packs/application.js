@@ -10,7 +10,6 @@
 import Vue from 'vue/dist/vue.common'
 import Layout from '../components/application/layout.vue'
 import DynamicPage from '../components/dashboard/home_page.vue'
-
 Vue.component('dynamic-page', DynamicPage)
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -20,6 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
     template: '<layout/>',
     components: {  Layout }
   })
-
+    new Vue({
+        el: '.dawien-slider',
+        components: {  Slider }
+    })
     console.log(app)
 })
