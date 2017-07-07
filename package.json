@@ -1,12 +1,4 @@
 {
-  "scripts": {
-    "postinstall": "npm rebuild node-sass",
-    "build": "node_modules/.bin/webpacker build",
-    "start": "node_modules/.bin/webpacker start"
-  },
-  "engines": {
-    "npm": "4.2.0"
-  },
   "name": "dawien",
   "private": true,
   "dependencies": {
