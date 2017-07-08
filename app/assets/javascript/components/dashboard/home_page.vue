@@ -10,17 +10,57 @@
         </div>
       </div>
       <div class="page-container">
-        <div class="welcome-container">
-          <div class="welcome-container__title">Welcome</div>
-          <div class="welcome-container__page">
+        <div class="page-container__block-item page-container__welcome">
+          <div class="page-container__title page-container__welcome-container-title">Welcome</div>
+          <div class="page-container__welcome-container-page">
           </div>
         </div>
-        <div class="benefit-container"></div>
-        <div class="statistic-container"></div>
-        <div class="merchant-container"></div>
-        <div class="team-container"></div>
-        <div class="subscribe-container"></div>
-        <div class="map-container"></div>
+        <div class="page-container__block-item page-container__benefit">
+          <div class="page-container__title">Our benefit</div>
+        </div>
+        <div class="page-container__block-item page-container__statistic">
+          <div class="page-container__title">Statistic</div>
+          <div class="page-container__content">
+            <ul class="page-container__list">
+              <li class="page-container__list-item">
+                <div class="page-container__list-item-image page-container__list-item-image--stat1"></div>
+                <div class="page-container__list-item-content">
+                  Integer et pretium nulla, sed tincidunt dui. Integer varius mi eget pulvinar suscipit.
+                </div>
+              </li>
+              <li class="page-container__list-item">
+                <div class="page-container__list-item-image page-container__list-item-image--stat2"></div>
+                <div class="page-container__list-item-content">
+                  Nunc aliquet, risus in egestas rhoncus, nibh mauris tincidunt arcu, non feugiat diam enim ut lectus.
+                </div>
+              </li>
+              <li class="page-container__list-item">
+                <div class="page-container__list-item-image page-container__list-item-image--stat3"></div>
+                <div class="page-container__list-item-content">
+                  Vestibulum ut risus dignissim, interdum sapien a, tincidunt mauris. Etiam malesuada rhoncus nisi, eu luctus dui eleifend eget.
+                </div>
+              </li>
+              <li class="page-container__list-item">
+                <div class="page-container__list-item-image page-container__list-item-image--stat4"></div>
+                <div class="page-container__list-item-content">
+                  Suspendisse vitae elit mauris. Donec mollis ac quam eget convallis.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="page-container__block-item page-container__merchant">
+          <div class="page-container__title">Out merchant</div>
+        </div>
+        <div class="page-container__block-item page-container__team-container">
+          <div class="page-container__title">Our team</div>
+        </div>
+        <div class="page-container__block-item page-container__subscribe">
+          <div class="page-container__title">Subscribe our blog</div>
+        </div>
+        <div class="page-container__block-item page-container__map">
+          <div class="page-container__title">Here we are</div>
+        </div>
       </div>
   </div>
 </template>

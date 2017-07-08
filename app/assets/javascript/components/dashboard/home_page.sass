@@ -26,9 +26,10 @@
   transform: skewY(-4.3deg)
 .page-container
   margin: 7.5% auto 0 auto
-  width: 70%
+  width: 100%
   display: flex
   align-items: center
+  flex-direction: column
 .main-page-banner__image-container
   flex: 1
   display: flex
@@ -58,15 +59,46 @@
   font-size: 20px
   width: 60%
   font-family: 'Bellefair', sans-serif
-.welcome-container
+.page-container__block-item
   display: flex
   justify-content: center
   align-items: center
   flex-direction: column
   width: 100%
-.welcome-container__title
+  margin-bottom: 2%
+.page-container__title
   border-bottom: 5px solid #778
   font-size: 60px
   color: #555555
-  margin-bottom: 2%
+  margin-bottom: 1%
   font-family: 'QuicksandBold', sans-serif
+.page-container__list-item-content
+  display: flex
+.page-container__list
+  width: 70%
+  align-items: baseline
+  flex-wrap: wrap
+  margin: 0 auto
+  list-style: none
+  display: flex
+.page-container__list-item
+  flex: 1
+  //height: 350px
+  display: flex
+  flex-direction: column
+.page-container__list-item-content
+  padding: 0 3%
+  font-family: 'Bellefair', sans-serif
+  font-size: 23px
+  color: #808080
+.page-container__list-item-image--stat1
+  background: url(images/statistic-image1.png) no-repeat center center
+.page-container__list-item-image--stat2
+  background: url(images/statistic-image2.png) no-repeat center center
+.page-container__list-item-image--stat3
+  background: url(images/statistic-image3.png) no-repeat center center
+.page-container__list-item-image--stat4
+  background: url(images/statistic-image4.png) no-repeat center center
+.page-container__list-item-image
+  background-size: contain
+  height: 150px
