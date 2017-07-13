@@ -11,5 +11,7 @@ Tech stack
 * codeship
 * webpacker gem
 * vue js
+* flexboxes
+* pundit
 
 Deployed on heroku: [Dawien](http://dawien.herokuapp.com/)
