@@ -60,10 +60,13 @@
         </div>
         <div class="page-container__block-item page-container__map">
           <div class="page-container__title">Here we are</div>
+          <div class="page-container__content ">
+            <map-block></map-block>
+          </div>
         </div>
       </div>
   </div>
 </template>
-
 <script src='./home_page.js'></script>
+
 <style lang="scss" src='./home_page.sass'></style>

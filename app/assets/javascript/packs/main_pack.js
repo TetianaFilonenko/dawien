@@ -10,10 +10,14 @@
 import Vue from 'vue/dist/vue.common'
 import Layout from '../components/application/layout.vue'
 import DynamicPage from '../components/dashboard/home_page.vue'
+import Map from '../components/helpers/map/map.vue'
+
 Vue.component('dynamic-page', DynamicPage)
+Vue.component('map-block', Map)
 
 document.addEventListener('DOMContentLoaded', () => {
   // document.body.appendChild(document.createElement('app'))
+
   const app = new Vue({
     el: '.general-layout',
     template: '<layout/>',
