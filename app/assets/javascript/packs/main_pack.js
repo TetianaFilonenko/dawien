@@ -16,8 +16,6 @@ Vue.component('dynamic-page', DynamicPage)
 Vue.component('map-block', Map)
 
 document.addEventListener('DOMContentLoaded', () => {
-  // document.body.appendChild(document.createElement('app'))
-
   const app = new Vue({
     el: '.general-layout',
     template: '<layout/>',

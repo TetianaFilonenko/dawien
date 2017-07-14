@@ -12,3 +12,5 @@
 // about supported directives.
 //
 //= require rails-ujs
+
+console.log('I work')
