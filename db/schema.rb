@@ -97,6 +97,7 @@ ActiveRecord::Schema.define(version: 20170714082727) do
     t.inet "current_sign_in_ip"
     t.inet "last_sign_in_ip"
     t.text "image"
+    t.text "auth_meta_data"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "admin", default: false
