@@ -10,35 +10,44 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170628131503) do
+ActiveRecord::Schema.define(version: 20170714082727) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "buyers", force: :cascade do |t|
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "companies", force: :cascade do |t|
     t.string "name"
     t.string "description"
     t.string "address"
+    t.string "country"
+    t.string "city"
     t.string "phone_number"
+    t.string "type"
+    t.text "logo"
+    t.float "latitude"
+    t.float "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "designers", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "company_id"
+  create_table "credit_cards", force: :cascade do |t|
+    t.integer "payment_system"
+    t.string "last4"
+    t.date "valid_till"
+    t.string "stripe_id"
+    t.integer "merchant_id"
+    t.string "stripe_token"
+    t.string "stripe_charge_id"
+    t.string "stripe_transaction_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "immediate_orders", force: :cascade do |t|
-    t.integer "work_id"
+  create_table "goods", force: :cascade do |t|
+    t.integer "merchant_id"
+    t.text "description"
+    t.float "price"
+    t.json "properties"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -46,43 +55,31 @@ ActiveRecord::Schema.define(version: 20170628131503) do
   create_table "merchants", force: :cascade do |t|
     t.integer "user_id"
     t.integer "company_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "messages", force: :cascade do |t|
-    t.integer "target_id"
-    t.string "target_type"
-    t.integer "user_from_id"
-    t.integer "user_to_id"
-    t.integer "parent_id"
-    t.text "body"
-    t.boolean "read", default: false
+    t.string "stripe_customer_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "orders", force: :cascade do |t|
-    t.integer "buyer_id"
-    t.integer "mode_id"
-    t.string "mode_type"
-    t.string "pattern"
-    t.string "size"
-    t.string "color"
+    t.string "buyer_email"
+    t.string "buyer_phone"
+    t.integer "good_id"
+    t.text "delivery_address"
+    t.json "properties"
+    t.float "latitude"
+    t.float "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "purchases", force: :cascade do |t|
-    t.integer "buyer_id"
+    t.string "buyer_email"
     t.integer "merchant_id"
     t.integer "order_id"
-    t.float "design_price"
-    t.float "creation_price"
-    t.float "commission"
     t.float "amount"
-    t.float "delivery_address"
     t.string "status"
+    t.string "stripe_charge_id"
+    t.string "stripe_transaction_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -99,26 +96,12 @@ ActiveRecord::Schema.define(version: 20170628131503) do
     t.datetime "last_sign_in_at"
     t.inet "current_sign_in_ip"
     t.inet "last_sign_in_ip"
+    t.text "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "admin", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-  end
-
-  create_table "votes", force: :cascade do |t|
-    t.integer "work_id"
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "works", force: :cascade do |t|
-    t.integer "designer_id"
-    t.text "description"
-    t.float "price"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end

@@ -1,3 +1,3 @@
 class Order < ApplicationRecord
-  belongs_to :mode, polymorphic: true
+  belongs_to :good
 end
