@@ -59,4 +59,4 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
-server '52.59.145.63', user: 'deploy', roles: %w{web app db}
+server 'ec2-52-59-145-63.eu-central-1.compute.amazonaws.com', user: 'deploy', roles: %w{web app db}
