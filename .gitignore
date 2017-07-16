@@ -26,3 +26,5 @@
 /.idea
 /public/assets/*
 /public/packs/*
+/config/database.yml
+/config/application.yml

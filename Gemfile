@@ -60,3 +60,14 @@ group :development do
   gem 'binding_of_caller'
   gem 'foreman', require: false
 end
+
+# deployment
+gem 'figaro'
+group :development do
+  gem 'capistrano'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rvm'
+end
+
