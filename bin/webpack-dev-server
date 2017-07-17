@@ -35,7 +35,7 @@ newenv = {
   "NODE_PATH" => NODE_MODULES_PATH.shellescape,
   "ASSET_HOST" => DEV_SERVER_HOST.shellescape
 }.freeze
-
+puts WEBPACK_CONFIG
 cmdline = ["yarn", "run", "webpack-dev-server", "--", "--progress", "--color", "--config", WEBPACK_CONFIG] + ARGV
 
 Dir.chdir(APP_PATH) do

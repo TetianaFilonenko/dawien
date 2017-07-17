@@ -1,6 +1,7 @@
 class Session::SignIn < Trailblazer::Operation
   contract do
-    undef :persisted? # TODO: allow with trailblazer/reform.
+    puts self.name
+    # undef :persisted? # TODO: allow with trailblazer/reform.
     attr_reader :user
 
     property :email,    virtual: true
