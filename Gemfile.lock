@@ -239,8 +239,9 @@ GEM
       dragonfly (~> 1.0.12)
       uber
     pg (0.21.0)
+    pipetree (0.1.1)
     public_suffix (2.0.5)
-    puma (3.9.1)
+    puma (3.8.2)
     pundit (1.1.0)
       activesupport (>= 3.0.0)
     rack (2.0.3)
@@ -375,6 +376,10 @@ GEM
     trailblazer-cells (0.0.3)
       cells (>= 4.1.0.rc1, < 5.0.0)
     trailblazer-loader (0.1.2)
+    trailblazer-operation (0.0.13)
+      declarative
+      pipetree (>= 0.1.1, < 0.2.0)
+      uber
     trailblazer-rails (0.4.0)
       reform-rails (>= 0.1.4)
       trailblazer (>= 1.0.4)
@@ -437,7 +442,7 @@ DEPENDENCIES
   minitest-spec-rails
   paperdragon
   pg
-  puma (~> 3.7)
+  puma (= 3.8.2)
   pundit
   rails (~> 5.1.2)
   rails_admin (~> 1.2)
