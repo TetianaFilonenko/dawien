@@ -70,6 +70,10 @@ GEM
       rake (>= 10.4, < 13.0)
     arel (8.0.0)
     bcrypt (3.1.11)
+    better_errors (2.1.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
     bindex (0.5.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -88,6 +92,10 @@ GEM
     capistrano-rvm (0.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
+    capistrano-upload-config (0.7.0)
+      capistrano (>= 3.0)
+    capistrano3-nginx (2.1.6)
+      capistrano (>= 3.0.0)
     capistrano3-puma (3.1.1)
       capistrano (~> 3.7)
       capistrano-bundler
@@ -113,6 +121,7 @@ GEM
       cells (>= 4.1)
     childprocess (0.7.1)
       ffi (~> 1.0, >= 1.0.11)
+    coderay (1.1.1)
     coffee-rails (4.2.2)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0)
@@ -417,11 +426,14 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  better_errors
   binding_of_caller
   capistrano
   capistrano-bundler
   capistrano-rails
   capistrano-rvm
+  capistrano-upload-config
+  capistrano3-nginx
   capistrano3-puma
   capybara (~> 2.13)
   cells (= 4.1.2)
