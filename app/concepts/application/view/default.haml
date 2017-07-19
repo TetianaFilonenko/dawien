@@ -1,0 +1,43 @@
+!!!
+%html
+  %head
+    %title Dawien
+    = csrf_meta_tags
+    = javascript_pack_tag 'default_pack'
+    = stylesheet_pack_tag 'default_pack'
+  %body
+  .general-layout
+    %header.header
+      .header__logo
+        .header__logo-icon
+        .header__logo-name
+          .header__logo-company
+            Dawien
+          .header__logo-company-aim
+            keep it simple
+      %nav.header__nav
+        %a.header__nav-link.header__nav-link_current Home
+        %a.header__nav-link Catalog
+        %a.header__nav-link Blog
+        %a.header__nav-link About
+        %a.header__nav-link Contacts
+        %a.header__nav-link Profile
+      .header__social-links
+        %a.header__social-link-item.header__social-link_facebook{ href: "https://www.facebook.com", target: "_blank" }
+        %a.header__social-link-item.header__social-link_google{ href: "https://google.com", target: "_blank" }
+        %a.header__social-link-item.header__social-link_twitter{ href: "https://twitter.com", target: "_blank" }
+    = yield
+    %footer.footer
+      .footer__contact-info
+        .footer__contact-info-item.footer__contact-info-location
+          .footer__contact-info-icon.footer__contact-info-location-icon
+          .footer__contact-info-label.footer__contact-info-phone-label Khakov, Tsilinogradskaya 41
+        .footer__contact-info-item.footer__contact-info-phone
+          .footer__contact-info-icon.footer__contact-info-phone-icon
+          .footer__contact-info-label.footer__contact-info-phone-label +380 066 612 38 19
+      .footer__bottom-block
+        .footer__company-detail Copyright &copy; 2017 | Dawien
+        .footer__social-links
+          %a.footer__social-link-item.footer__social-link-item_facebook{ href: "https://www.facebook.com", target: "_blank" }
+          %a.footer__social-link-item.footer__social-link-item_google{ href:"https://google.com", target: "_blank" }
+          %a.footer__social-link-item.footer__social-link-item_twitter{ href: "https://twitter.com", target: "_blank" }

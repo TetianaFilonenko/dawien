@@ -1,0 +1,47 @@
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPHz1YPRwDxGxbh4dpTaeWNX_di163b88&callback"></script>
+= javascript_pack_tag 'dashboard'
+= stylesheet_pack_tag 'dashboard'
+.content
+  .main-page-banner-container
+    .main-page-banner__image-container
+      .main-page-banner__image
+    .main-page-banner__title-container
+      .main-page-banner__title Dawien
+      .main-page-banner__description Everyone has something to sell. The greatest thing you can ever sell is an idea or talent.
+  .page-container
+    .page-container__block-item.page-container__welcome
+      .page-container__title.page-container__welcome-container-title Welcome
+      .page-container__welcome-container-page
+    .page-container__block-item.page-container__benefit
+      .page-container__title Our benefit
+    .page-container__block-item.page-container__statistic
+      .page-container__title Statistic
+      .page-container__content
+        %ul.page-container__list
+          %li.page-container__list-item
+            .page-container__list-item-image.page-container__list-item-image--stat1
+            .page-container__list-item-content
+              Integer et pretium nulla, sed tincidunt dui. Integer varius mi eget pulvinar suscipit.
+          %li.page-container__list-item
+            .page-container__list-item-image.page-container__list-item-image--stat2
+            .page-container__list-item-content
+              Nunc aliquet, risus in egestas rhoncus, nibh mauris tincidunt arcu, non feugiat diam enim ut lectus.
+          %li.page-container__list-item
+            .page-container__list-item-image.page-container__list-item-image--stat3
+            .page-container__list-item-content
+              Vestibulum ut risus dignissim, interdum sapien a, tincidunt mauris. Etiam malesuada rhoncus nisi, eu luctus dui eleifend eget.
+          %li.page-container__list-item
+            .page-container__list-item-image.page-container__list-item-image--stat4
+            .page-container__list-item-content
+              Suspendisse vitae elit mauris. Donec mollis ac quam eget convallis.
+    .page-container__block-item.page-container__merchant
+      .page-container__title Out merchant
+    .page-container__block-item.page-container__team-container
+      .page-container__title Our team
+    .page-container__block-item.page-container__subscribe
+      .page-container__title Subscribe our blog
+    .page-container__block-item.page-container__map
+      .page-container__title Here we are
+      .page-container__content
+        .map-block
+          #myMap
