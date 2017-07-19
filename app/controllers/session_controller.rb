@@ -5,7 +5,7 @@ class SessionController < ApplicationController
 
   def sign_up
     run Session::SignUp do |op|
-      flash[:notice] = "Please log in now!"
+      flash[:notice] = 'Please log in now!'
       return redirect_to sessions_sign_in_form_path
     end
 
