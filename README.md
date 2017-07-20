@@ -15,3 +15,4 @@ Tech stack
 * pundit
 
 Deployed on heroku: [Dawien](http://dawien.herokuapp.com/)
+EC2: [Dawien](http://52.59.145.63/)
